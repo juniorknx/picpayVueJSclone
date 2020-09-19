@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="icon" href="Assets/ppay-icon.png">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>PicPay</title>
   </head>
@@ -38,7 +39,7 @@
                             <a class="nav-link" href="#">Sobre Nós<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Dúvidas Frequentes</a>
+                            <a class="nav-link menuitem" href="#">Dúvidas Frequentes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Central de Doações</a>
@@ -59,8 +60,7 @@
 
 
         Vue.component('section-one',{
-            template:`
-                
+            template:`     
                 <section id="first">
                     <div class="container">
                         <div class="row">
@@ -92,6 +92,7 @@
         .navbar {
             padding-top: 25px;
             padding-bottom: 25px;
+            background: red;
         }
 
         .subscribe-Btn {
@@ -116,6 +117,14 @@
 
         .navbar-expand-lg .navbar-collapse {
             justify-content: flex-end !important;
+        }
+
+        .nav-item {
+            color: #11c76f !important;
+        }
+
+        a .menuitem {
+            color:red !important;
         }
 
         /* FULL CONTENT SECTION 1 */ 
