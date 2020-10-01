@@ -45,6 +45,24 @@
                     <div class="row">
                         <div class="col-md-12 texto-conceptual">
                             <h1>{{ firstTitle }} <br> {{ secondTitle }}</h1>
+                            <div class="container btnDownload">
+                                <a class="btnDefault" href="#">Baixe o App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>                
+        `
+    });
+
+    Vue.component('section-two',{
+        props:['firstTitle', 'secondTitle'],
+        template:`     
+            <section id="first">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 texto-conceptual">
+                            <h1>{{ firstTitle }} <br> {{ secondTitle }}</h1>
                         </div>
                     </div>
                 </div>
