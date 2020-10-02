@@ -36,7 +36,7 @@
         `
     });
 
-
+    //FIRST SECTION
     Vue.component('section-one',{
         props:['firstTitle', 'secondTitle'],
         template:`     
@@ -46,7 +46,7 @@
                         <div class="col-md-12 texto-conceptual">
                             <h1>{{ firstTitle }} <br> {{ secondTitle }}</h1>
                             <div class="container btnDownload">
-                                <a class="btnDefault" href="#">Baixe o App</a>
+                                <a class="btnDefault" href="#">Baixe e aproveite</a>
                             </div>
                         </div>
                     </div>
@@ -55,14 +55,20 @@
         `
     });
 
+    //SECOND SECTION
     Vue.component('section-two',{
-        props:['firstTitle', 'secondTitle'],
+        props:['title','titleSecond','description'],
         template:`     
-            <section id="first">
+            <section id="second">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 texto-conceptual">
-                            <h1>{{ firstTitle }} <br> {{ secondTitle }}</h1>
+                        <div class="col-xs-12 col-md-4">
+                            <h3>{{ title }} <br> {{ titleSecond }}</h3>
+                            <p>{{ description }}</p>
+                        </div>
+
+                        <div class="col-xs-12 col-md-offset2 col-md-5">
+                            <img src="./Assets/imagens/sub-hero.png" class="img-fluid">
                         </div>
                     </div>
                 </div>
