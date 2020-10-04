@@ -36,7 +36,7 @@
         `
     });
 
-    //FIRST SECTION
+    //BANNER
     Vue.component('section-one',{
         props:['firstTitle', 'secondTitle'],
         template:`     
@@ -55,19 +55,19 @@
         `
     });
 
-    //SECOND SECTION
+    //FEATURE 1
     Vue.component('section-two',{
-        props:['title','titleSecond','description'],
+        props:['title','titleSecond','description', 'featImg'],
         template:`     
             <section id="second">
                 <div class="container">
-                    <div class="row">
+                    <div class="row d-flex justify-content-center align-items-center">
                         <div class="col-xs-12 col-md-4">
                             <h3>{{ title }} <br> {{ titleSecond }}</h3>
                             <p>{{ description }}</p>
                         </div>
 
-                        <div class="col-xs-12 col-md-offset2 col-md-5">
+                        <div class="col-xs-12 col-md-5" id="imagebox">
                             <img src="./Assets/imagens/sub-hero.png" class="img-fluid">
                         </div>
                     </div>
@@ -76,9 +76,18 @@
         `
     });
 
+
     var app = new Vue({
     el: '#app',
     data: {
-
-    }
+            backgroundGray: {
+                backgroundColor:'#1b1d21'
+            },
+            backgroundBlack: {
+                backgroundColor:'#fff'
+            },
+            fuckColor:{
+                backgroundColor:'blue'
+            }
+        }
     })
