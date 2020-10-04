@@ -57,7 +57,7 @@
 
     //FEATURE 1
     Vue.component('section-two',{
-        props:['title','titleSecond','description', 'featImg'],
+        props:['title','titleSecond','description', 'path'],
         template:`     
             <section id="second">
                 <div class="container">
@@ -68,7 +68,7 @@
                         </div>
 
                         <div class="col-xs-12 col-md-5" id="imagebox">
-                            <img src="./Assets/imagens/sub-hero.png" class="img-fluid">
+                            <img :src="path" class="img-fluid" />
                         </div>
                     </div>
                 </div>
